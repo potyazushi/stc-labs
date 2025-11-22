@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STC Labs | AI × Automation Consulting</title>
+  <meta name="description" content="STC Labsはdify・ChatGPTなどの生成AIで現場で使える自動化を実現するAI・業務改善コンサルティング企業です。">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="STC Labs">
+        <!-- ロゴ：いまのローカルパス直指定（本番は assets/logo.png などに差し替え） -->
+        <img class="brand-logo" src="assets/logo.png" alt="STC Labs Logo"/>
+        <span class="brand-name">STC Labs</span>
+      </a>
+
+      <nav class="nav" aria-label="main navigation">
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">事業概要</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#flow">提供の流れ</a></li>
+          <li><a href="#profile">自己紹介</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <ul class="drawer-list">
+      <li><a href="#about" class="drawer-link">事業概要</a></li>
+      <li><a href="#services" class="drawer-link">サービス</a></li>
+      <li><a href="#flow" class="drawer-link">提供の流れ</a></li>
+      <li><a href="#profile" class="drawer-link">自己紹介</a></li>
+      <li><a href="#contact" class="drawer-link">お問い合わせ</a></li>
+    </ul>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">AI × Automation Consulting</p>
+        <h1>
+          “その作業、AIに任せた方が良くない？”
+        </h1>
+        <p class="lead">
+          STC Labsは、dify・ChatGPTなどの生成AIで<br>
+          「現場で本当に使える自動化」を最小コストで実装します。
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#services">サービスを見る</a>
+          <a class="btn btn-ghost" href="#contact">無料相談する</a>
+        </div>
+
+        <div class="hero-badges">
+          <span>小規模ビジネス特化</span>
+          <span>最短2週間でPoC</span>
+          <span>運用まで伴走</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <div class="stat">
+            <p class="stat-title">削減できる工数</p>
+            <p class="stat-value">-30%〜</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">導入スピード</p>
+            <p class="stat-value">2〜3週</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">主な領域</p>
+            <p class="stat-value">AIエージェント / Excel自動化</p>
+          </div>
+          <p class="stat-note">
+            “人がやらなくていい作業”を、あなたの現場に合わせて最適化。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2>あなたの業務を効率化する、実践的なAI活用</h2>
+        <p>
+          弊社はdify・ChatGPTなどの生成AIを活用した
+          “現場で本当に使える自動化”にこだわっています。<br>
+          日々の手作業・工数過多となっている業務をAIで効率化し、
+          最小のコストで最大の業務改善を実現します。
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>現場主義のAI実装</h3>
+          <p>机上のPoCで終わらせず、運用で回る形まで落とし込みます。</p>
+        </div>
+        <div class="feature">
+          <h3>最小コストで最大効果</h3>
+          <p>既存の業務とツールに合わせ、ライトに始めて大きく伸ばします。</p>
+        </div>
+        <div class="feature">
+          <h3>スピード重視</h3>
+          <p>最短2週間でプロトタイプを提示。改善サイクルを高速化します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Services ===== -->
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>Services</h2>
+        <p>「何をどうAI化できるか？」から一緒に整理し、最短距離で成果に繋げます。</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-top">
+            <h3>STC Labs AI Agent Pack</h3>
+            <p class="price">50,000円〜</p>
+          </div>
+          <p class="service-desc">dify等で「業務を肩代わりするAIエージェント」を構築。</p>
+          <ul class="service-list">
+            <li>問い合わせ対応AI（FAQ/受付/一次対応）</li>
+            <li>業務手順・マニュアル対応AI</li>
+            <li>レポート / 文書生成AI</li>
+            <li>予約・スケジュール調整サポートAI</li>
+          </ul>
+          <a class="service-cta" href="#contact">相談する →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-top">
+            <h3>STC Labs Excel Boost Pack</h3>
+            <p class="price">20,000円〜</p>
+          </div>
+          <p class="service-desc">Excel業務を“秒速化”する自動化ツールを構築。</p>
+          <ul class="service-list">
+            <li>集計・加工の自動化（手作業ゼロへ）</li>
+            <li>AIレポート生成（Excel × AI）</li>
+            <li>データ整形・フォーマット統一</li>
+            <li>日次 / 月次レポート自動化</li>
+          </ul>
+          <a class="service-cta" href="#contact">相談する →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-top">
+            <h3>STC Labs AI Starter Consulting</h3>
+            <p class="price">5,000円〜</p>
+          </div>
+          <p class="service-desc">AI活用の最初の一歩を、実務ベースで伴走。</p>
+          <ul class="service-list">
+            <li>ChatGPTの基本操作 / 実務活用</li>
+            <li>difyの設計・使い方</li>
+            <li>Gemini等の比較と用途整理</li>
+            <li>自動化候補の棚卸し</li>
+          </ul>
+          <a class="service-cta" href="#contact">相談する →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Flow ===== -->
+  <section class="section" id="flow">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>Process</h2>
+        <p>無駄なく、最短距離で「使える自動化」へ。</p>
+      </div>
+
+      <ol class="flow">
+        <li class="flow-item">
+          <span class="flow-num">01</span>
+          <div>
+            <h3>無料ヒアリング</h3>
+            <p>現状の業務課題・作業フローを把握。相談だけでもOKです。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <span class="flow-num">02</span>
+          <div>
+            <h3>課題整理 & 改善ロードマップ</h3>
+            <p>AIでできる作業、優先順位、導入効果を整理してご提案します。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <span class="flow-num">03</span>
+          <div>
+            <h3>プロトタイプ作成</h3>
+            <p>dify / Excel自動化 / GPT連携など、まず動く形を短期開発。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <span class="flow-num">04</span>
+          <div>
+            <h3>改善・調整</h3>
+            <p>実業務に合わせ、使い勝手・精度・UIを一緒に磨きます。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <span class="flow-num">05</span>
+          <div>
+            <h3>本構築・納品</h3>
+            <p>完成版のツールを構築し、使い方とマニュアルもセットで納品。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <span class="flow-num">06</span>
+          <div>
+            <h3>アフターサポート</h3>
+            <p>納品後1ヶ月は軽微な修正・運用の質問に無料対応します。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ===== Profile ===== -->
+  <section class="section section-dark" id="profile">
+    <div class="container profile">
+      <div class="profile-card">
+        <h2>About Me</h2>
+        <p class="profile-name">吉田 章馬 / Shoma Yoshida</p>
+        <p class="profile-sub">
+          外資IT企業での業務改善・自動化プロジェクト経験をベースに、<br>
+          “小さく始めて大きく効くAI”を現場へ届けます。
+        </p>
+
+        <div class="profile-tags">
+          <span>AIエージェント設計</span>
+          <span>dify / LLM活用</span>
+          <span>業務フロー整理</span>
+          <span>Excel自動化</span>
+          <span>PoC最短2週間</span>
+        </div>
+
+        <ul class="profile-list">
+          <li>業務改善/自動化の企画〜実装まで一気通貫で対応</li>
+          <li>現場目線で“運用できる形”を重視</li>
+          <li>英語環境のプロジェクト経験あり（グローバル対応も可）</li>
+        </ul>
+      </div>
+
+      <div class="profile-side">
+        <div class="profile-quote">
+          <p>
+            「それ、AIに任せた方が早くない？」<br>
+            そう思った瞬間が、改善のスタートです。
+          </p>
+        </div>
+        <div class="profile-mission">
+          <h3>Mission</h3>
+          <p>現場の“ムダな手作業”をAIで消し、時間と集中力を取り戻す。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="section-head centered">
+        <h2>Contact</h2>
+        <p>まずは「これAIでやれる？」の壁打ちだけでもOKです。</p>
+      </div>
+
+      <div class="contact-card">
+        <p class="contact-label">メール</p>
+        <a class="contact-mail" href="mailto:shoma.yoshida0011@gmail.com">
+          shoma.yoshida0011@gmail.com
+        </a>
+
+        <div class="contact-note">
+          <p>ご相談内容の例</p>
+          <ul>
+            <li>AIエージェントで問い合わせ対応を自動化したい</li>
+            <li>実装にいくらかかりそうか予算を見積もりたい</li>
+            <li>そもそも何ができるか確認したい</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="STC Labs Logo">
+        <div>
+          <p class="footer-title">STC Labs</p>
+          <p class="footer-sub">AI × Automation Consulting</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#about">事業概要</a>
+        <a href="#services">サービス</a>
+        <a href="#flow">提供の流れ</a>
+        <a href="#profile">自己紹介</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+
+      <p class="footer-copy">© 2025 STC Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
